@@ -34,9 +34,9 @@ const ExampleComponent = (props) => {
       <h2>AXIOS API DATA Posts</h2>
       {data && (
         <ul>
-          {data.map((post) => (
-            <li key={post.id}>{post.title}</li>
-          ))}
+          {data.map((post,index) => {
+            return index < props.limits ? <li key={post.id}>{post.title}</li> : null
+          })}
         </ul>
       )}
     </div>
