@@ -34,10 +34,10 @@ const FetchData = (props) => {
 
   return (
     <div>
-      <h2>FETCH API DATA Posts</h2>
+      <p>FETCH API DATA Posts</p>
       {data && (
         <ul>
-          {data.map((post,index) => { return index < props.limits ? <li key={post.id}>{post.title}</li> : null })}
+          {data.map((post,index) => { return index < props.limits ? <li className='listItem' key={post.id}>{post.title}</li> : null })}
         </ul>
       )}
     </div>

@@ -13,7 +13,7 @@ function App() {
       <hr/>
       RECURSIVE <br/>
       FIBONACCI (5) {fibonacci(5).toString()}
-      <br/>
+      <hr/>
       <FetchData limits={3}/>
       <hr/>
       <AxiosData limits={3}/>

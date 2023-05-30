@@ -31,11 +31,11 @@ const ExampleComponent = (props) => {
 
   return (
     <div>
-      <h2>AXIOS API DATA Posts</h2>
+      <p>AXIOS API DATA Posts</p>
       {data && (
         <ul>
           {data.map((post,index) => {
-            return index < props.limits ? <li key={post.id}>{post.title}</li> : null
+            return index < props.limits ? <li className='listItem' key={post.id}>{post.title}</li> : null
           })}
         </ul>
       )}
